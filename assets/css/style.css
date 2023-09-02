@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css/+Fonts import*/2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Narnoor&family=Noto+Sans+JP:wght@100&family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*@import url('https://fonts.googleapis.com/css/+Fonts import2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Narnoor&family=Noto+Sans+JP:wght@100&family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');*/
 
 * {
     padding: 0;
@@ -126,7 +126,7 @@ main {
 	 	align-self:flex-end;
 	 }*/
 #circle-cover-bg {
-    background: url('cristinapeter.jpg')no-repeat top center/cover;
+    background: url("../images/cristinapeter1.jpg")no-repeat top center/cover;
     height: 90vw;
     width: 90vw;
     margin-bottom: 20px;
@@ -144,7 +144,7 @@ main {
 #hero {
     height: 600px;
     width: 100%;
-    background: url("crisweb.jpg") no-repeat center center/cover;
+    background:url("../images/crisweb1.jpg")no-repeat center center/cover;
     margin-bottom: 20px;
     position: relative;
 }
@@ -172,15 +172,30 @@ main {
     list-style-type: none;
 }
 
-#social-networks a {
+#social-networks a/ {
     text-decoration: none;
 }
-
-
+*Gallery page*/
+#photos img{
+    width:100%;
+    light-height:1em;
+}
+#photos{
+    line-height:0;
+}
+/*Media query:large or landscape phones(
+    576px and up)*/
+@media screen and (min-width:576px){
+    #photos{
+        column-count:2;
+        column-gap:0;
+    }
+}
 
 /*Media query:tablets and larger(768px and up)*/
 
 @media screen and (min-width:768px) {
+    
 
     /*Header*/
     nav {
@@ -267,7 +282,10 @@ main {
         letter-spacing: 5px;
         line-height: 1.6;
     }
-
+    /*Gallery Page*/
+#photos{
+    column-count:3;
+    }
 }
 
 /*Large devices (laptop desktop)*/
@@ -276,7 +294,9 @@ main {
         border-bottom: 1px solid #3a3a3a;
 
     }
-
+#photos{
+    column-count:4;
+    }
 
 }
 
